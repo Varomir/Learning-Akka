@@ -7,7 +7,7 @@ abstract class Shape {
 	 * Draw takes a function argument. Each shape will pass a stringized
 	 * version of itself to this function, which does the "drawing"
 	 */
-  def draw(f: String => Unit): Unit = f(s"draw: ${this.toString}")
+  def draw(f: String => Unit): Unit = f(s"Draw [SIDE EFFECT!!!]: ${this.toString}")
 }
 
 case class Circle(center: Point, radius: Double) extends Shape
